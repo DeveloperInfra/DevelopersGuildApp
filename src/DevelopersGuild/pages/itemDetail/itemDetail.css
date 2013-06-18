@@ -1,0 +1,130 @@
+﻿.itemdetailpage .content {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    display: block;
+    height: 100%;
+    overflow-x: auto;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
+
+    .itemdetailpage .content article {
+        /* Define a multi-column, horizontally scrolling article by default. */
+        column-fill: auto;
+        column-gap: 80px;
+        column-width: 480px;
+        height: calc(100% - 183px);
+        margin-left: 120px;
+        margin-top: 133px;
+        width: 480px;
+    }
+
+        .itemdetailpage .content article header .item-title {
+            margin-bottom: 19px;
+        }
+
+        .itemdetailpage .content article header .item-subtitle {
+            margin-bottom: 16px;
+            margin-top: 0;
+        }
+
+        .itemdetailpage .content article .item-image {
+            /*height: 240px;
+            width: 460px;*/
+        }
+
+        .itemdetailpage .content article .item-content p {
+            margin-top: 10px;
+            margin-bottom: 20px;
+            margin-right: 20px;
+        }
+
+/* Guild Event Calendar */
+.eventHead {
+    list-style: none outside none;
+    margin-left: 25px;
+    padding-bottom: 1em;
+    position: relative;
+}
+
+.eventTitle {
+    font-weight: bold;
+}
+
+.eventDate {
+    border-right: 1px dotted gray;
+    font-weight: bold;
+    left: -55px;
+    margin: 0;
+    padding: 2px 10px 2px 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 30px;
+}
+
+.eventDate .day {
+    color: #4E9743;
+    display: block;
+    font-size: 1.5em;
+    letter-spacing: -1px;
+    line-height: .75em;
+}
+
+.eventDate .month {
+    color: #F36E2A;
+    display: block;
+    text-transform: lowercase;
+}
+
+.eventDate .year {
+    display: block;
+    font-size: .75em;
+}
+
+.eventInfo {
+    margin: 0;
+}
+
+@media screen and (-ms-view-state: snapped) {
+    .itemdetailpage .content {
+        -ms-grid-row: 2;
+        -ms-grid-row-span: 1;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+        .itemdetailpage .content article {
+            /* Define a single column, vertically scrolling article in snapped mode. */
+            -ms-grid-columns: 300px 1fr;
+            -ms-grid-row: 2;
+            -ms-grid-rows: auto 60px;
+            display: -ms-grid;
+            height: 100%;
+            margin-left: 20px;
+            margin-top: 6px;
+            width: 300px;
+        }
+
+            .itemdetailpage .content article header .item-title {
+                margin-bottom: 10px;
+            }
+
+            .itemdetailpage .content article .item-image {
+                /*height: 140px;
+                width: 280px;*/
+                max-width: calc(100% - 20px);
+           }
+
+            .itemdetailpage .content article .item-content {
+                padding-bottom: 60px;
+                padding-right: 20px;
+            }
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+    .itemdetailpage .content article {
+        margin-left: 100px;
+    }
+}

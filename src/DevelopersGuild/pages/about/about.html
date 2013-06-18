@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>about</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-light.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <link href="about.css" rel="stylesheet" />
+    <script src="about.js"></script>
+</head>
+<body>
+    <div id="about" data-win-control="WinJS.UI.SettingsFlyout" data-win-options="{width: 'narrow'}">
+        <div class="SettingsPane">
+            <div class="win-label">
+                <button onclick="WinJS.UI.SettingsFlyout.show()" class="win-backbutton">
+                </button>
+                <span class="SettingsTitle">About</span>
+            </div>
+            <article class="SettingsContent">
+                <h4>Enterprise Developers Guild</h4>
+                <h4>By Mark A. Wilson</h4>
+                <h4>Version 1.0.0.0</h4>
+                <p>Copyright © 2012 Enterprise Developers Guild. All rights reserved.</p>
+                <p>All images are copyrighted and the property of their respective owner(s).</p>
+            </article>
+        </div>
+    </div>
+</body>
+</html>
